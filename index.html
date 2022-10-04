@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment Work</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="./">Home</a></li>
+          <li><a href="./thankyou.html">Thank You</a></li>
+        </ul>
+      </nav>
+      <h1>Form to Fill</h1>
+    </header>
+
+    <main>
+      <form
+        action="./index.html"
+        method="post"
+        name="contactForm03"
+        netlify
+      ></form>
+
+      <fieldset>
+        <legend>Information</legend>
+
+        <label for="fullName">Full Nmame</label><br />
+        <input
+          type="text"
+          name="fullName"
+          id="fullName"
+          required
+          placeholder="john roger"
+        /><br />
+        <small>Required</small>
+      </fieldset>
+
+      <fieldset>
+        <legend>Contact Info</legend>
+        <div>
+          <label for="email">Email</label><br />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            placeholder="john@gmail.com"
+          /><br />
+          <small>Required</small>
+        </div>
+        <div>
+          <label for="tel">Phone</label><br />
+          <input type="tel" name="tel" id="tel" placeholder="(777) 777-7777" />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <div>
+          <legend>If you have any queries</legend>
+          <label for="inquiryType">Inquiry Type</label><br />
+          <select name="inquiryType" id="inquiryType" required>
+            <option>Select you inquiry:</option>
+            <option value="Career Opportunity">Career Opportunity</option>
+            <option value="Business Proposal">Business Proposal</option>
+            <option value="Complaint">Complaint</option></select
+          ><br />
+          <small>Required</small>
+        </div>
+
+        <div>
+          <label for="message">Message</label><br />
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            required
+            placeholder="Write your inquries here....."
+          ></textarea>
+          <small>Required</small>
+        </div>
+      </fieldset>
+      <div>
+        <input type="submit" value="Submit" />
+      </div>
+    </main>
+  </body>
+</html>
